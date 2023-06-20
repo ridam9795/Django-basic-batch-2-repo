@@ -50,7 +50,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'persons_app'
+    'persons_app',
+    'index_page_app',
+    'todo_app'
+
 ]
 
 MIDDLEWARE = [
@@ -68,7 +71,7 @@ ROOT_URLCONF = 'my_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,7 +122,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/kolkata'
 
 USE_I18N = True
 
